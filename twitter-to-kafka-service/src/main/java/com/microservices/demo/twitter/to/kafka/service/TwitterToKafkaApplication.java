@@ -1,6 +1,5 @@
 package com.microservices.demo.twitter.to.kafka.service;
 
-import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.runner.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,6 @@ public class TwitterToKafkaApplication implements CommandLineRunner {
     /**
      * using constructor injection prevents reflection and immutable thread safe
      */
-    private final TwitterToKafkaServiceConfigData configData;
     private final StreamRunner streamRunner;
 
     public static void main(String[] args) {
